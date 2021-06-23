@@ -1,5 +1,5 @@
 """
-SECCTION PART 1
+FUNCTION PART 1
 
 What is function?
    > A Process to executing a task
@@ -175,8 +175,4 @@ print(up())
 ## nonlocal
 def outer():
     count = 0
-    def inner():
-        nonlocal count
-        count += 1
-        return count
-    return inner()
+    def     return inner()
