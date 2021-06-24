@@ -49,7 +49,7 @@ nilai(rizal=1, ilham=2, aldo=3, wati=19)
 print_student_score(rizal=100, ilham=200, andi=300, tika=12)
 
 def special_greeting(**kwargs):
-    if 'David' in kwargs and kwargs['David'] == 'special':
+    if 'David' in kwargs and kwargs['David'] == 'special': 
         return 'You got a special greeting David'
     elif 'David' in kwargs:
         return f"{kwargs['David']} David!"
