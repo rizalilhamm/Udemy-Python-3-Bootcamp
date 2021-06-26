@@ -202,3 +202,9 @@ print(avg_grades)
 # Quis
 def interleave(value1, value2):
     return ''.join(''.join(x) for x in zip(value1, value2))
+
+def triple_and_filter(lst):
+    return list(filter(lambda x: x % 4 == 0, map(lambda x: x*3, lst)))
+
+def extract_full_name(l):
+    return list(map(lambda val: "{} {}".format(val['first'], val['last']), l))
