@@ -168,14 +168,21 @@ class Chicken:
 """ Class Methods """
 
 class Manusia:
+    # Constructor
     def __init__(self, firstname, lastname, age):
         self.firstname = firstname
         self.lastname = lastname
         self.age = age
+    
+    # classmethod
     @classmethod
     def from_string(cls, text):
         firstname, lastname, age = text.split(",")
         return cls(firstname, lastname.replace(' ', ''), int(age))
+
+    # Representation
+    def __repr__(self):
+        return f"User: {self.firstname} {self.lastname}"
 
 # Panggil jika tidak menggunakan class method
 # nama = Manusia.from_string(Manusia, "Rizal, Ilham, 21")
